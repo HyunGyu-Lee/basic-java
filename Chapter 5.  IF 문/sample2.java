@@ -4,7 +4,7 @@ import java.io.*;
 public class sample2 {
 	public static void main(String[] args) throws IOException
 	{
-		System.out.println("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 		
 		BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
 		
@@ -13,14 +13,14 @@ public class sample2 {
 		
 		switch(res) {
 		case 1:
-			System.out.println("1ÀÌ ÀÔ·ÂµÇ¾ú½À´Ï´Ù.");
+			System.out.println("1ì´ ì…ë ¥ë˜ì—ˆìŠµë‹ˆë‹¤.");
 			break;
 			
 		case 2:
-			System.out.println("2°¡ ÀÔ·ÂµÇ¾ú½À´Ï´Ù.");
+			System.out.println("2ê°€ ì…ë ¥ë˜ì—ˆìŠµë‹ˆë‹¤.");
 			break;
 		default:
-			System.out.println("1 È¤Àº 2¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä");
+			System.out.println("1 í˜¹ì€ 2ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”");
 			break;
 			}
 		
