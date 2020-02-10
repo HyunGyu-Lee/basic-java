@@ -1,31 +1,33 @@
 package sample1;
 
 import java.io.*;
-public class Hyungyu_example1 {
-	public static void main(String[] args)throws IOException
-	{
-		System.out.println("������ �����Ը� �Է��Ͽ� �ּ���.");
+public class HyungyuExample1 {
+	public static void main(String[] args) throws IOException {
+		System.out.println("성별과 몸무게를 입력하여 주세요.");
 		
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		
-		String str1=br.readLine();
-		String str2=br.readLine();
+		// 입력받은 문자열을 , 기준으로 쪼갬 (M,65 ...)
+		String[] data = br.readLine().split(",");
 		
-		char res1=str1.charAt(0);
-		int res2=Integer.parseInt(str2);
+		// 쪼개진 문자열 ["M", "65"]을 성별(sex), 체중(weight) 변수에 할당
+		String sex = data[0];
+		int weight = Integer.parseInt(data[1]);
 		
+		int limit;
 		
-		if((res1=='M'||res1=='m') && res2>=80) {
-			System.out.println("���Դϴ�.");
+		// 성별 기준 비만 기준치(limit) 변수에 할당
+		// toLowerCase()는 문자를 소문자로 바꿈 (String 클래스의 toLowerCase() 찾아볼 것)
+		if ("m".equals(sex.toLowerCase()) {
+		    limit = 80;
+		} else if ("w".equals(sex.toLowerCase()) {
+		    limit = 65;
 		}
-		else if((res1=='W'||res1=='y')&& res2>=65) {
-			System.out.println("���Դϴ�.");
-		}
-		else
-			System.out.println("�����Դϴ�.");
 		
-			
+		// 체중(weight)이 비만 기준치(limit) 이상이면 비만 아니면 정상
+		if (weight >= limit) {
+		    System.out.println("비만입니다.");
+		} else {
+		    System.out.println("정상입니다.");	
 		}
 	}
-
-
