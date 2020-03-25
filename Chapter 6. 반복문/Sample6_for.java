@@ -1,21 +1,21 @@
 package sample1;
-
 import java.io.*;
-
-public class Sample2_for {
+public class Sample6_for {
 	public static void main(String[] args) throws IOException
 	{
-		System.out.println("몇개 출력하실래요?");
-		
+		System.out.println("언제 멈추시겠습니까(1~10)");
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		
 		String str=br.readLine();
-		int num=Integer.parseInt(str);
+		int res = Integer.parseInt(str);
 		
-		for(int i=1;i<=num;i++) {
-			System.out.print('*');
+		for(int i=1;i<=10;i++) {
+			System.out.println(i+ "번째 처리입니다.");
+			if(i==res)
+				break;
 		}
 		
 	}
+	
 
 }
