@@ -1,60 +1,53 @@
 package io.study.java.chapter9.student;
 
+import io.study.java.chapter9.student.feedback.StudentTestInfo;
+
 import java.util.Scanner;
 
 public class StudentTestMain {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System_in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("이름을 입력 하세요.");
         String name = sc.nextLine();
-        return;
+
 
         System.out.println("나이을 입력 하세요.");
-        Int age = sc.nextInt();
-        return;
+        int age = sc.nextInt();
+
 
         System.out.println("국어점수를 입력 하세요.");
-        Int korean = sc.nextInt();
-        return;
+        int korean = sc.nextInt();
+
 
         System.out.println("수학점수를 입력 하세요.");
-        Int math = sc.nextInt();
-        return;
+        int math = sc.nextInt();
 
         System.out.println("영어점수를 입력 하세요.");
-        Int english = sc.nextInt();
-        return;
+        int english = sc.nextInt();
+
 
         System.out.println("숫자를 입력 하세요");
         int num = sc.nextInt();
 
         StudentTestInfo stm = new StudentTestInfo(name, age, korean, math, english);
 
-        if (num==1){
-            System.out.println("이름은 ="+getName());
-            System.out.println("나이는 ="+getage());
-            System.out.println("국어점수는 ="+getkorean());
-            System.out.println("수학점수는 ="+getmath());
-            System.out.println("영어점수는 ="+getenglish());
-            System.out.println("점수 총합은 ="+gettotal());
-            System.out.println("평균은 ="+getavg());
+        if (num == 1) {
+            System.out.println("이름은 =" + stm.getName());
+            System.out.println("나이는 =" + stm.getAge());
+            System.out.println("국어점수는 =" + stm.getKorean());
+            System.out.println("수학점수는 =" + stm.getMath());
+            System.out.println("영어점수는 =" + stm.getEnglish());
+            System.out.println("점수 총합은 =" + stm.totalRecord());
+            System.out.println("평균은 =" + stm.avgRecord());
 
+        } else {
+            System.out.println("평균은 =" + stm.avgRecord());
         }
-
-
-
-        else {
-            System.out.println ("평균은 ="+getavg());
-        }
-
-
-
 
 
     }
-
 
 
 }
