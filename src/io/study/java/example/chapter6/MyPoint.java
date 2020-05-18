@@ -16,9 +16,9 @@ public class MyPoint {
 
     public void setX(int px){       // x좌표를 저장
         this.x = px;
-    }
+    }//X좌표를 저장/
 
-    public void setY(int py){       //y좌표를
+    public void setY(int py){       //y좌표를 저장/
         this.y = py;
     }
 

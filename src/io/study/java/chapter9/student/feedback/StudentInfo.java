@@ -41,9 +41,7 @@ public class StudentInfo {
 		return englishScore;
 	}
 
-	public int getScoreTotal() {
-		return koreanScore + mathScore + englishScore;
-	}
+	public int getScoreTotal() { return koreanScore + mathScore + englishScore; }
 
 	public double getScoreAverage() {
 		return getScoreTotal() / 3;
