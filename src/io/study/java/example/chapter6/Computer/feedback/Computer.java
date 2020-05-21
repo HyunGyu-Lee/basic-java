@@ -28,6 +28,7 @@ public class Computer {
     public void bootUsingStringFormat() {
         System.out.println("입력하신 컴퓨터를 실행합니다.");
         System.out.println(String.format("[%s] %s", this.name, this.computerBody.getCpuInfo()));
+        System.out.println(String.format("[%s] %s", this.name, this.computerBody.getCpuInfo()));
         System.out.println(String.format("Display: %s", this.monitorInfo));
         System.out.println(String.format("RAM: %d GB", this.computerBody.getRamInfo()));
         System.out.println(String.format("DISK: %s, DISTSIZE: %d GB", this.computerBody.getDiskInfo(), this.computerBody.getDiskSize()));
