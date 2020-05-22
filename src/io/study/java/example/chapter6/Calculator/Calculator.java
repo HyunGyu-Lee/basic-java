@@ -3,7 +3,7 @@ package io.study.java.example.chapter6.Calculator;
 public class Calculator {
     private int right;
     private int left;
-    private CalculatorMain cal;
+
 
     public Calculator(int right, int left){
 
