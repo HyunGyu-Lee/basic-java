@@ -1,8 +1,7 @@
-package com.hst.learninghub.coffeeshop;
+/*
+package io.study.java.example.chapter6.Calculator;
 
-/**
- * @author hyungyu.lee@nhn.com
- */
+
 public class CoffeePos {
 	private int americanoPrice;
 	private int cafelattePrice;
@@ -14,7 +13,7 @@ public class CoffeePos {
 		this.sizeUpPrize = sizeUpPrize;
 	}
 
-	public Coffee[] order(String orderString) {
+	public CoffeePos[] order(String orderString) {
 		// A_Y,5
 		String[] orders = orderString.split("_");
 		String[] orders2 = orders[1].split(",");
@@ -53,3 +52,4 @@ public class CoffeePos {
 		return sizeUpPrize;
 	}
 }
+*/
