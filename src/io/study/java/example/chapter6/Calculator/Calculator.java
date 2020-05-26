@@ -5,15 +5,19 @@ public class Calculator {
     private int left;
 
 
-    public Calculator(int right, int left){
+    public Calculator(int right, int left) {
 
-    this.left = left;
-    this.right = right;
+        this.left = left;
+        this.right = right;
 
     }
 
-    public int getRight(){return right;}
+    public int getRight() {
+        return right;
+    }
 
-    public int getLeft(){return left;}
+    public int getLeft() {
+        return left;
+    }
 
 }

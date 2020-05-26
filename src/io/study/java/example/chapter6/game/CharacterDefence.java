@@ -28,8 +28,8 @@ public class CharacterDefence {
         return defenceUpgrade;
     }
 
-    public int getDfUpgrade(){
-        return defenceDfpoint+(defenceUpgrade*5);
+    public int getDfUpgrade() {
+        return defenceDfpoint + (defenceUpgrade * 5);
     }
 
 
