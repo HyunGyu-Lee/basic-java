@@ -7,14 +7,17 @@ public class Weapon {
 	private String weaponType;
 
 	public Weapon(String weaponType) {
+
 		this.weaponType = weaponType;
 	}
 
 	public String getWeaponType() {
+
 		return weaponType;
 	}
 
 	public String getWeaponName() {
+
 		String weaponName = "";
 		if (weaponType.equals("SD")) {
 			weaponName = "검";

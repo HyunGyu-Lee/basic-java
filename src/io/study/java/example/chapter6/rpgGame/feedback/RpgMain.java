@@ -28,30 +28,29 @@ public class RpgMain {
 		while (true) {
 			System.out.println("무기를 선택하여 주세요.(SD:검 BW:활, ST:스태프)");
 			String weaponType = sc.nextLine();
-			Weapon weapon = new Weapon(weaponType);
 
 			if (character.getCharacterJob().equals("W")) {
 				if (weaponType.equals(SD.getWeaponType())) {
-					character.setCharacterWeapon(weapon);
+					character.setCharacterWeapon(SD);
 					break;
 				} else {
-					System.out.println(String.format("%s는 %s를 장착할 수 없습니다.", character.getCharacterJobName(), weapon.getWeaponName()));
+					System.out.println(String.format("%s는 %s를 장착할 수 없습니다.", character.getCharacterJobName(), SD.getWeaponName()));
 				}
 			}
 			if (character.getCharacterJob().equals("A")) {
 				if (weaponType.equals(BW.getWeaponType())) {
-					character.setCharacterWeapon(weapon);
+					character.setCharacterWeapon(BW);
 					break;
 				} else {
-					System.out.println(String.format("%s는 %s를 장착할 수 없습니다.", character.getCharacterJobName(), weapon.getWeaponName()));
+					System.out.println(String.format("%s는 %s를 장착할 수 없습니다.", character.getCharacterJobName(), BW.getWeaponName()));
 				}
 			}
 			if (character.getCharacterJob().equals("M")) {
 				if (weaponType.equals(ST.getWeaponType())) {
-					character.setCharacterWeapon(weapon);
+					character.setCharacterWeapon(ST);
 					break;
 				} else {
-					System.out.println(String.format("%s는 %s를 장착할 수 없습니다.", character.getCharacterJobName(), weapon.getWeaponName()));
+					System.out.println(String.format("%s는 %s를 장착할 수 없습니다.", character.getCharacterJobName(), ST.getWeaponName()));
 				}
 			}
 		}
