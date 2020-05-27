@@ -12,18 +12,13 @@ public class Character {
 
 
     public String getCharacterName(){
+
         return characterName;
     }
 
     public String getCharacterJob(){
-        if(characterJob.equals("W")){
-            characterJob = "전사";
-        }else if(characterJob.equals("A")){
-            characterJob = "궁수";
-        }else if(characterJob.equals("M")){
-            characterJob = "마법사";
-        }
         return characterJob;
+
     }
 
     public void setCharacterWeapon(){
@@ -39,6 +34,13 @@ public class Character {
     }
 
     public void setCharacterJob(){
+        if(characterJob.equals("W")){
+            characterJob = "전사";
+        }else if(characterJob.equals("A")){
+            characterJob = "궁수";
+        }else if(characterJob.equals("M")){
+            characterJob = "마법사";
+        }
 
 
 

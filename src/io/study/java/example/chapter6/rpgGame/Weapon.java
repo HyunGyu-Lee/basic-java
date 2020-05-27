@@ -9,6 +9,12 @@ public class Weapon {
     }
 
     public String getWeaponType(){
+
+        return weaponType;
+
+    }
+
+    public void setWeaponType(){
         if(weaponType.equals("SD")){
             this.weaponType = "검";
         }else if(weaponType.equals("BW")){
@@ -16,11 +22,6 @@ public class Weapon {
         }else if(weaponType.equals("ST")){
             weaponType = "스태프";
         }
-        return weaponType;
-
-    }
-
-    public void setWeaponType(){
 
     }
 
