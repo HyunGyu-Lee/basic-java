@@ -14,7 +14,7 @@ public class RpgMain {
 		System.out.println("캐릭터 이름을 입력 하세요.");
 		String characterName = sc.nextLine();
 		System.out.println("캐릭터 직업을 설정 하세요(W:전사 A:궁수 M:마법사)");
-		String characterJob = sc.nextLine();
+		String characterJob = sc.nextLine(); 
 		Character character = new Character(characterName, characterJob);
 
 		Weapon SD = new Weapon("SD");
