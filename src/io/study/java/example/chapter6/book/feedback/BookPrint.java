@@ -7,6 +7,7 @@ public class BookPrint {
 	private String printType;
 
 	public BookPrint(String printType) {
+
 		this.printType = printType;
 	}
 

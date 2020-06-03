@@ -16,9 +16,7 @@ public class Book {
 		this.bookEn = bookEn;
 	}
 
-	public String getBookTitle(){
-		return bookTitle;
-	}
+	public String getBookTitle(){ return bookTitle; }
 
 	public String getBookWriter(){
 		return bookWriter;
