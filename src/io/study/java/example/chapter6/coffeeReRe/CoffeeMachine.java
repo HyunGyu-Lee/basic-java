@@ -13,20 +13,20 @@ public class CoffeeMachine {
         Coffee coffee = new Coffee(coffeeType,shot,water);
 
         if(coffee.getCoffeeType().equals("A")){
-            A = A-1;
+            this.A = this.A-1;
         }else if(coffee.getCoffeeType().equals("B")){
-            B = B-1;
+            this.B = this.B-1;
         }else if(coffee.getCoffeeType().equals("C")){
-            C = C-1;
+            this.C = this.C-1;
         }
         return coffee;
 
     }
 
     public void show(){
-        System.out.println(A);
-        System.out.println(B);
-        System.out.println(C);
+        System.out.println(this.A);
+        System.out.println(this.B);
+        System.out.println(this.C);
     }
 
 
