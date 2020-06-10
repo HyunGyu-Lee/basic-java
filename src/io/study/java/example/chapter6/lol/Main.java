@@ -23,6 +23,10 @@ public class Main {
         System.out.println(minion4.getAtkPoint());
         System.out.println(minion4.getHp());
 
+        Minion minion5 = nexus.minion();
+        System.out.println(minion5.getAtkPoint());
+        System.out.println(minion5.getHp());
+
 
     }
 
