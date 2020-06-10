@@ -4,6 +4,9 @@ public class Main {
     public static void main(String[] args) {
         Nexus nexus = new Nexus();
 
+        show(nexus);
+
+
         Minion minion1 = nexus.minion();
         System.out.println(minion1.getHp());
         System.out.println(minion1.getAtkPoint());
@@ -27,6 +30,13 @@ public class Main {
         Minion minion6 = nexus.minion();
         System.out.println(minion6.getHp());
         System.out.println(minion6.getAtkPoint());
+
+    }
+
+    public static void show(Nexus nexus) {
+        Minion minion = nexus.minion();
+        System.out.println(minion.getHp());
+        System.out.println(minion.getAtkPoint());
 
     }
 }

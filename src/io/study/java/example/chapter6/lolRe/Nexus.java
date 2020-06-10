@@ -4,13 +4,13 @@ public class Nexus {
 
     private int madeMinion;
 
-    public Minion minion(){
+    public Minion minion() {
         Minion minion = new Minion();
-        this.madeMinion = this.madeMinion +1;
+        this.madeMinion = this.madeMinion + 1;
 
-        if(this.madeMinion/3==0){
+        if (this.madeMinion / 3 == 0) {
 
-        }else {
+        } else {
             minion.superMinion();
         }
 

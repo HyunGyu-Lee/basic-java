@@ -4,18 +4,22 @@ public class Minion {
     private int hp;
     private int atkPoint;
 
-    public Minion(){
+    public Minion() {
         this.hp = 100;
         this.atkPoint = 20;
     }
 
-    public int getHp(){return hp;}
+    public int getHp() {
+        return hp;
+    }
 
-    public int getAtkPoint(){return atkPoint;}
+    public int getAtkPoint() {
+        return atkPoint;
+    }
 
-    public void superMinion(){
-        this.hp = this.hp *2;
-        this.atkPoint = this.atkPoint *2;
+    public void superMinion() {
+        this.hp = this.hp * 2;
+        this.atkPoint = this.atkPoint * 2;
     }
 
 
