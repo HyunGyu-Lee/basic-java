@@ -2,7 +2,6 @@ package io.study.java.example.chapter6.lol;
 
 public class Nexus {
     private int num;
-    private int div;
 
     public Nexus() {
         this.num = 0;
@@ -10,6 +9,7 @@ public class Nexus {
     }
 
     public Minion minion() {
+            int div;
             Minion minion = new Minion();
             num++;
             div = num%3;
