@@ -18,6 +18,7 @@ public class CoffeeMain {
         int water = sc.nextInt();
 
         coffeeMachine.coffee(coffeeType,shot,water);
+        coffeeMachine.show();
 
 
 

@@ -12,15 +12,21 @@ public class CoffeeMachine {
     public Coffee coffee(String coffeeType, int shot, int water){
         Coffee coffee = new Coffee(coffeeType,shot,water);
 
-        if(coffee.getCoffeeType()=="A"){
-            int A =-1;
-        }else if(coffee.getCoffeeType()=="B"){
-            int B =-1;
-        }else if(coffee.getCoffeeType()=="C"){
-            int C=-1;
+        if(coffee.getCoffeeType().equals("A")){
+            A = A-1;
+        }else if(coffee.getCoffeeType().equals("B")){
+            B = B-1;
+        }else if(coffee.getCoffeeType().equals("C")){
+            C = C-1;
         }
-
         return coffee;
+
+    }
+
+    public void show(){
+        System.out.println(A);
+        System.out.println(B);
+        System.out.println(C);
     }
 
 
