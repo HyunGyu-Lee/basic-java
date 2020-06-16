@@ -31,6 +31,7 @@ public class Computer {
     }
 
     public void booting() {
+        System.out.println("부팅 되었습니다.");
         Display display = new Display();
         display.storage(storage.getStorageManufactor(), storage.getStorageType());
         display.memory(memory.getMoryManufactor(), memory.getMemorySize());
