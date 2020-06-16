@@ -7,14 +7,12 @@ public class Display {
 
     }
 
-    public Memory memory(String manufactor, int memorySize){
-        Memory memory = new Memory(manufactor,memorySize);
+    public Memory memory(Memory memory){
         System.out.println(String.format("메모리 용량 : %s,메모리 제조사 : %s",memory.getMemorySize(),memory.getMoryManufactor()));
         return memory;
     }
 
-    public Storage storage(String storageManufactor, String storageType){
-        Storage storage = new Storage(storageManufactor,storageType);
+    public Storage storage(Storage storage){
         System.out.println(String.format("디스크 타입 : %s,디스크 제조사 : %s",storage.getStorageType(),storage.getStorageManufactor()));
         return storage;
 
