@@ -32,8 +32,8 @@ public class Computer {
 
     public void booting() {
         System.out.println("부팅 되었습니다.");
-        display.storage(storage);
-        display.memory(memory);
+        display.storage(this.storage);
+        display.memory(this.memory);
 
     }
 
