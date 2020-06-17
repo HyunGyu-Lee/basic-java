@@ -17,6 +17,7 @@ public class Computer {
     }
 
     public Display getDisplay() {
+
         return display;
     }
 
