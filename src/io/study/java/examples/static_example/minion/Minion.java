@@ -1,4 +1,4 @@
-package io.study.java.examples.static_example;
+package io.study.java.examples.static_example.minion;
 
 /**
  * @author dlgusrb0808@gmail.com

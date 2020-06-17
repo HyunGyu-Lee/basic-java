@@ -1,4 +1,6 @@
-package io.study.java.examples.static_example;
+package io.study.java.examples.static_example.minion;
+
+import io.study.java.examples.static_example.minion.Minion;
 
 /**
  * @author dlgusrb0808@gmail.com
