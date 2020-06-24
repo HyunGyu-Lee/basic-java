@@ -15,6 +15,7 @@ public class Animal {
 	protected int age;
 
 	public void run() {
+
 		System.out.println(String.format("%d살 짜리 %s가 다리 %d개로 달린다", this.age, this.name, this.legCount));
 	}
 }
