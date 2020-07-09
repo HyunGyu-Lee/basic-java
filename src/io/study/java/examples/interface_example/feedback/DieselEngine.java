@@ -3,15 +3,11 @@ package io.study.java.examples.interface_example.feedback;
 /**
  * @author dlgusrb0808@gmail.com
  */
-public class DieselEngine implements Engine {
+public class DieselEngine extends AbstractEngine implements Engine {
 
 	private String engineName;
 	private String engineVersion;
 
-	public DieselEngine() {
-		this.engineName = "디젤엔진";
-		this.engineVersion = "v5";
-	}
 
 	@Override
 	public void engineStart() {
@@ -26,5 +22,12 @@ public class DieselEngine implements Engine {
 	@Override
 	public String getEngineVersion() {
 		return this.engineVersion;
+	}
+
+
+	@Override
+	public void EngineInformation(String engineName, String engineVersion) {
+		this.engineName = "디젤엔진";
+		this.engineVersion = "v5";
 	}
 }
