@@ -5,4 +5,6 @@ public interface Engine{
     public void engineStart();
     public String getEngineName();
     public String getEngineVersion();
+    public void engineFix();
+
 }

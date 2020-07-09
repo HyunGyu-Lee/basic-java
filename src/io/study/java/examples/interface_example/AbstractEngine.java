@@ -8,7 +8,7 @@ public class AbstractEngine implements Engine{
     public AbstractEngine(String engineName, String engineVersion) {
         this.engineName = engineName;
         this.engineVersion = engineVersion;
-        
+
     }
 
     @Override
@@ -28,4 +28,9 @@ public class AbstractEngine implements Engine{
         return engineVersion;
 
     }
+    @Override
+    public void engineFix() {
+        System.out.println(String.format("%s버전의 %s엔진을 수리합니다.", getEngineVersion(), getEngineName()));
+    }
+
 }
