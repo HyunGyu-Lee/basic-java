@@ -3,31 +3,12 @@ package io.study.java.examples.interface_example.feedback;
 /**
  * @author dlgusrb0808@gmail.com
  */
-public class GasolineEngine extends AbstractEngine implements Engine {
+public class GasolineEngine extends AbstractEngine {
 
-	private String engineName;
-	private String engineVersion;
-
-
-	@Override
-	public void engineStart() {
-		System.out.println(String.format("%s을 시작합니다. 엔진버전: %s", getEngineName(), getEngineVersion()));
+	public GasolineEngine() {
+		super("가솔린엔진", "v5");
 	}
 
-	@Override
-	public String getEngineName() {
-		return this.engineName;
-	}
+	// 가솔린 엔진만의 추가 기능이 들어갈 수 있음
 
-	@Override
-	public String getEngineVersion() {
-		return this.engineVersion;
-	}
-
-
-	@Override
-	public void EngineInformation(String engineName, String engineVersion) {
-		this.engineName = "가솔린엔진";
-		this.engineVersion = "v7";
-	}
 }
