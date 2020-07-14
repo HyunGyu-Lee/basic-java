@@ -11,4 +11,11 @@ public class GasolineEngine extends AbstractEngine {
 
 	// 가솔린 엔진만의 추가 기능이 들어갈 수 있음
 
+	@Override
+	public void engineFix() {
+		System.out.println(this.getEngineName() + "엔진 수리~~");
+
+		// 가솔린 엔진의 수리 작업 추가 수행
+		System.out.println("추가 수리 작업 수행~~~");
+	}
 }

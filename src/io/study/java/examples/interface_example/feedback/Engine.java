@@ -11,4 +11,5 @@ public interface Engine {
 
 	String getEngineVersion();
 
+	void engineFix();
 }

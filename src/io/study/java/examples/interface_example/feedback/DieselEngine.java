@@ -11,4 +11,8 @@ public class DieselEngine extends AbstractEngine {
 
 	// 디젤 엔진만의 추가 기능이 들어갈 수 있음
 
+	@Override
+	public void engineFix() {
+		System.out.println(this.getEngineName() + "엔진 수리~~");
+	}
 }
