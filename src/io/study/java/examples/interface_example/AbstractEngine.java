@@ -28,9 +28,17 @@ public class AbstractEngine implements Engine{
         return engineVersion;
 
     }
+
+    @Override
+    public void engineFinish() {
+        System.out.println("엔진을 종료합니다.");
+
+    }
+
     @Override
     public void engineFix() {
-        System.out.println(String.format("%s버전의 %s엔진을 수리합니다.", getEngineVersion(), getEngineName()));
+
     }
+
 
 }

@@ -23,18 +23,13 @@ public class Car{
 
         System.out.println(String.format("%s을 장착한 %s 자동차에 시동을 겁니다.", this.engine.getEngineName(), this.carName));
 
-        this.engine.engineFix();
     }
 
     public void finish(){
         System.out.println(String.format("%s을 장착한 %s 자동차에 시동을 끕니다.", this.engine.getEngineName(), this.carName));
-
-        engineFinish();
-    }
-
-    public void engineFinish(){
-        System.out.println(String.format("%s 엔진을 끕니다.",engine.getEngineName()));
+        engine.engineFinish();
 
     }
+
 
 }

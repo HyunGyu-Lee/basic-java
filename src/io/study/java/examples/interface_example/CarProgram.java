@@ -15,5 +15,18 @@ public class CarProgram {
         car.start();
 
         car.finish();
+
+
+        AbstractEngine diesel = new Diesel();
+        AbstractEngine gasoline = new Gasoline();
+
+        diesel.engineFix();
+        gasoline.engineFix();
+
+        diesel.engineFix();
+
+
+
+
     }
 }
