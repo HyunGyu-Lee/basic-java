@@ -1,6 +1,6 @@
 package io.study.java.examples.interface_example;
 
-public class AbstractEngine implements Engine{
+public abstract class AbstractEngine implements Engine{
 
     private String engineName;
     private String engineVersion;
@@ -35,10 +35,6 @@ public class AbstractEngine implements Engine{
 
     }
 
-    @Override
-    public void engineFix() {
-
-    }
 
 
 }
