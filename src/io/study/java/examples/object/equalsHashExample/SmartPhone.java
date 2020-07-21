@@ -1,4 +1,4 @@
-package io.study.java.examples.object;
+package io.study.java.examples.object.equalsHashExample;
 
 import java.util.Objects;
 

@@ -1,4 +1,6 @@
-package io.study.java.examples.object;
+package io.study.java.examples.object.equalsHashExample;
+
+import io.study.java.examples.object.equalsHashExample.SmartPhone;
 
 public class SmartPhoneProgram {
     public static void main(String[] args) {
