@@ -15,7 +15,7 @@ public class SmartPhone {
     public boolean equals(Object o) {
         if (o instanceof SmartPhone) {
             SmartPhone smartPhone = (SmartPhone) o;
-            if(userName == ((SmartPhone) o).userName){
+            if(this.userName == smartPhone.userName){
                 return true;
             }
         }
