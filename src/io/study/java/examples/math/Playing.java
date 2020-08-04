@@ -8,16 +8,16 @@ public class Playing {
     public String setNum(){
 
         double random = Math.floor(Math.random()*3);
-        num = (int) random;
+        this.num = (int) random;
 
-        if(num==0){
-            play = "묵";
-        }else if(num==1){
-            play = "찌";
-        }else if(num==2){
-            play = "빠";
+        if(this.num==0){
+            this.play = "묵";
+        }else if(this.num==1){
+            this.play = "찌";
+        }else if(this.num==2){
+            this.play = "빠";
         }
-        System.out.println(play);
+        System.out.println(this.play);
 
         return play;
     }
@@ -26,35 +26,35 @@ public class Playing {
 
         switch(str){
             case "묵" :
-                if(play.equals("묵")){
+                if(this.play.equals("묵")){
                     System.out.println("비겼습니다. 다시시작하세요.");
                     break;
-                }else if(play.equals("찌")){
+                }else if(this.play.equals("찌")){
                     System.out.println("이겼습니다. 축하해요");
                     break;
-                }else if(play.equals("빠")){
+                }else if(this.play.equals("빠")){
                     System.out.println("졌습니다...ㅠㅡㅠ");
                     break;
                 }
             case "찌" :
-                if(play.equals("묵")){
+                if(this.play.equals("묵")){
                     System.out.println("졌습니다...ㅠㅡㅠ");
                     break;
-                }else if(play.equals("찌")){
+                }else if(this.play.equals("찌")){
                     System.out.println("비겼습니다. 다시시작하세요.");
                     break;
-                }else if(play.equals("빠")){
+                }else if(this.play.equals("빠")){
                     System.out.println("이겼습니다. 축하해요");
                     break;
                 }
             case "빠" :
-                if(play.equals("묵")){
+                if(this.play.equals("묵")){
                     System.out.println("이겼습니다. 축하해요");
                     break;
-                }else if(play.equals("찌")){
+                }else if(this.play.equals("찌")){
                     System.out.println("졌습니다...ㅠㅡㅠ");
                     break;
-                }else if(play.equals("빠")){
+                }else if(this.play.equals("빠")){
                     System.out.println("비겼습니다. 다시시작하세요.");
                     break;
                 }

@@ -22,5 +22,6 @@ public class PlayingMain {
         Playing playing = new Playing();
         playing.setNum();
         playing.playGame(playGo);
+
     }
 }
