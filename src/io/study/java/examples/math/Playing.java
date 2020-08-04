@@ -17,11 +17,47 @@ public class Playing {
         }else if(num==2){
             play = "빠";
         }
+        System.out.println(play);
 
         return play;
     }
 
-    public String getPlay() {
-        return play;
+    public void playGame(String str){
+
+        switch(str){
+            case "묵" :
+                if(play.equals("묵")){
+                    System.out.println("비겼습니다. 다시시작하세요.");
+                    break;
+                }else if(play.equals("찌")){
+                    System.out.println("이겼습니다. 축하해요");
+                    break;
+                }else if(play.equals("빠")){
+                    System.out.println("졌습니다...ㅠㅡㅠ");
+                    break;
+                }
+            case "찌" :
+                if(play.equals("묵")){
+                    System.out.println("졌습니다...ㅠㅡㅠ");
+                    break;
+                }else if(play.equals("찌")){
+                    System.out.println("비겼습니다. 다시시작하세요.");
+                    break;
+                }else if(play.equals("빠")){
+                    System.out.println("이겼습니다. 축하해요");
+                    break;
+                }
+            case "빠" :
+                if(play.equals("묵")){
+                    System.out.println("이겼습니다. 축하해요");
+                    break;
+                }else if(play.equals("찌")){
+                    System.out.println("졌습니다...ㅠㅡㅠ");
+                    break;
+                }else if(play.equals("빠")){
+                    System.out.println("비겼습니다. 다시시작하세요.");
+                    break;
+                }
+        }
     }
 }
