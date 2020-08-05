@@ -3,6 +3,7 @@ package io.study.java.examples.math;
 public class Playing {
     private int num;
     String play;
+    int newNum;
 
 
     public String setNum(){
@@ -24,40 +25,22 @@ public class Playing {
 
     public void playGame(String str){
 
-        switch(str){
-            case "묵" :
-                if(this.play.equals("묵")){
-                    System.out.println("비겼습니다. 다시시작하세요.");
-                    break;
-                }else if(this.play.equals("찌")){
-                    System.out.println("이겼습니다. 축하해요");
-                    break;
-                }else if(this.play.equals("빠")){
-                    System.out.println("졌습니다...ㅠㅡㅠ");
-                    break;
-                }
-            case "찌" :
-                if(this.play.equals("묵")){
-                    System.out.println("졌습니다...ㅠㅡㅠ");
-                    break;
-                }else if(this.play.equals("찌")){
-                    System.out.println("비겼습니다. 다시시작하세요.");
-                    break;
-                }else if(this.play.equals("빠")){
-                    System.out.println("이겼습니다. 축하해요");
-                    break;
-                }
-            case "빠" :
-                if(this.play.equals("묵")){
-                    System.out.println("이겼습니다. 축하해요");
-                    break;
-                }else if(this.play.equals("찌")){
-                    System.out.println("졌습니다...ㅠㅡㅠ");
-                    break;
-                }else if(this.play.equals("빠")){
-                    System.out.println("비겼습니다. 다시시작하세요.");
-                    break;
-                }
+        if(str.equals("묵")){
+            newNum = 0;
+        }else if(str.equals("찌")){
+            newNum = 1;
+        }else if(str.equals("빠")){
+            newNum = 2;
         }
+
+        if(newNum-this.num==2||newNum-this.num==-1){
+            System.out.println("승리");
+        }else if(newNum-this.num==1||newNum-this.num==-2){
+            System.out.println("패배");
+        }else if(newNum==this.num){
+            System.out.println("비김");
+        }
+
+
     }
 }
