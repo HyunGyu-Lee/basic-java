@@ -1,7 +1,8 @@
 package io.study.java.examples.enumExample;
 
 enum Fruit {
-    Banana("yellow"), Peach("pink"), Apple("red");       // public static final Fruit Banana; 와 같은 의미
+    Banana("yellow"), Peach("pink"), Apple("red");
+    // public static final Fruit Banana; 와 같은 의미
 
     public String color;
 
