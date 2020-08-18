@@ -23,8 +23,14 @@ public class Example {
         C.add(1);
         C.add(2);
 
-        System.out.println(A.containsAll(B));
-        System.out.println(B.containsAll(C));
+        System.out.println(A.containsAll(C));
+
+        System.out.println(B.addAll(C));
+        Iterator hh = (Iterator) B.iterator();
+        while (hh.hasNext()){
+            System.out.println(hh.next());
+        }
+
         System.out.println(C.containsAll(A));
         System.out.println(A.containsAll(C));
 
