@@ -1,20 +1,24 @@
 package io.study.java.examples.school;
 
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Scanner;
+import java.util.Iterator;
 
-public class StudentsExample {
+public class StudentsExample{
     public static void main(String[] args) {
 
-        ArrayList<Students> array = new ArrayList<Students>();
+        ArrayList<Students> array = new ArrayList<>();
+        Iterator iter=array.iterator();
 
         Scanner sc = new Scanner(System.in);
         System.out.println("학생 기록부 관리 프로그램");
 
-        int num = 0 ;
+        int num = 0;
 
-        while(num<=3) {
-            if(num==3){
+        while (num <= 3) {
+            if (num == 3) {
                 System.out.println("종료합니다.");
                 break;
             }
@@ -25,8 +29,8 @@ public class StudentsExample {
             System.out.println("============");
             num = sc.nextInt();
 
-            switch(num){
-                case 1 :
+            switch (num) {
+                case 1:
                     System.out.println("이름을 입력하시오");
                     sc.nextLine();
                     String name = sc.nextLine();
@@ -35,20 +39,25 @@ public class StudentsExample {
                     System.out.println("나이를 입력하시오");
                     int age = sc.nextInt();
 
-                    Students st = new Students(name,className,age);
+                    Students st = new Students(name, className, age);
                     array.add(st);
                     break;
 
-                case 2 :
+
+                case 2:
                     System.out.println("학생을 조회합니다");
-                    if(array.size()==0){
+                    if (array.size() == 0) {
                         System.out.println("등록된 학생이 없습니다.");
+                    } else {
+                        for (int i = 0; i < array.size(); i++) {
+                            Students students = array.get(i);
+                            System.out.println(String.format("%s. / %s / %s / %s", (i + 1), students.getName(), students.getClassName(), students.getAge()));
+
+                        }
                     }
-                    for(int i=0;i<array.size();i++)
-                    System.out.println(String.format("%s. / %s / %s / %s",(i+1),array.get(i).getName(),array.get(i).getClassName(),array.get(i).getAge()));
             }
 
-
         }
+
     }
 }

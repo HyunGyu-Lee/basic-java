@@ -42,13 +42,11 @@ public class StudentsExample {
                     if (array.size() == 0) {
                         System.out.println("등록된 학생이 없습니다.");
                     } else {
-                        for (int i = 0; i < array.size(); i++) {
-                            // 매번 array.get(i) 를 호출하는 것은 좋은 방법이 아님
-                            // ArrayList는 get 시 빠르게 찾을 수 있지만 LinkedList의 경우 리스트 크기가 커질경우 get 속도가 느려짐
-                            // 때문에 아래와 같이 변수에 담아두고 사용
-                            Students students = array.get(i);
-                            System.out.println(String.format("%s. / %s / %s / %s", (i + 1), students.getName(), students.getClassName(), students.getAge()));
+                        for(Students students : array){
+                            int j=0;
+                            System.out.println(String.format("%s. / %s / %s / %s", (j + 1), students.getName(), students.getClassName(), students.getAge()));
                         }
+
                     }
                 case 3:
                     System.out.println("종료합니다.");
