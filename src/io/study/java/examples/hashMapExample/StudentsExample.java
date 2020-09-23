@@ -47,10 +47,8 @@ public class StudentsExample {
                         for(int i=0 ; i<map.size();i++){
                             Students students = array.get(i);
                         }
-                            for (int i=0;i<map.size();i++) {
-                                Map.Entry entry = (Map.Entry) map.entrySet();
-                                Students students = array.get(i);
-                                System.out.println(String.format("[학생번호]:%s,[학생이름]:%s,[학생나이]:%s",entry.getKey(),students.getName(),students.getAge()));
+                            for (Map.Entry entry : map.entrySet()) {
+                                System.out.println(String.format("[학생번호]:%s,[학생이름]:%s,[학생나이]:%s",entry.getKey(),entry.getValue(),entry.getValue()));
                             }
 
 
