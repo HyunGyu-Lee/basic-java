@@ -37,6 +37,7 @@ public class StudentsExample {
                     array.add(st);
                     map.put(number, array);
 
+
                     break;
                 case 2:
                     System.out.println("학생 조회");
@@ -44,16 +45,17 @@ public class StudentsExample {
                         System.out.println("등록 데이터 없습니다.");
                         break;
                     } else {
-                        for(int i=0 ; i<map.size();i++){
-                            Students students = array.get(i);
-                        }
+                        int i = 0;
                             for (Map.Entry entry : map.entrySet()) {
-                                System.out.println(String.format("[학생번호]:%s,[학생이름]:%s,[학생나이]:%s",entry.getKey(),entry.getValue(),entry.getValue()));
+
+                                if(map.size()!=0){
+                                    Students students = array.get(i);
+                                    System.out.println(String.format("[학생번호]:%s,[학생이름]:%s,[학생나이]:%s",entry.getKey(),students.getName(),students.getAge()));
+                                    i ++;
+                                }
+
                             }
-
-
                         }
-
                     }
             }
         }
