@@ -1,11 +1,11 @@
 package io.study.java.examples.hashMapExample;
+
 import java.util.*;
 
-public class StudentsExample {
+public class StudentsMain {
     public static void main(String[] args) {
 
-        List<Students> array = new ArrayList();
-        Map<Integer, List<Students>> map = new HashMap();
+        Map<Integer, Students> map = new HashMap();
 
         Scanner sc = new Scanner(System.in);
 
@@ -34,8 +34,8 @@ public class StudentsExample {
                     int age = sc.nextInt();
 
                     Students st = new Students(name, age);
-                    array.add(st);
-                    map.put(number, array);
+                    map.put(number,st);
+
                     break;
                 case 2:
                     System.out.println("학생 조회");
@@ -43,18 +43,15 @@ public class StudentsExample {
                         System.out.println("등록 데이터 없습니다.");
                         break;
                     } else {
-                        int i = 0;
-                            for (Map.Entry entry : map.entrySet()) {
-
-                                if(map.size()!=0){
-                                    Students students = array.get(i);
-                                    System.out.println(String.format("[학생번호]:%s,[학생이름]:%s,[학생나이]:%s",entry.getKey(),students.getName(),students.getAge()));
-                                    i ++;
-                                }
+                        for(int key : map.keySet()){
+                            System.out.println(String.format("[학생번호] : %s ,[이름] : %s ,[나이] : %s",map.keySet(),map.get(key).getName(),map.get(key).getAge()));
 
                             }
+
                         }
                     }
             }
         }
     }
+
+
