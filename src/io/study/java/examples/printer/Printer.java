@@ -8,10 +8,6 @@ public class Printer<T> implements Printable {
         this.text = text;
     }
 
-    public void setText(T text) {
-        this.text = text;
-    }
-
     public T getText() {
         return text;
     }
